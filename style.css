@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,400&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+
+header{
+	width: 100%;
+	height: 10vh;
+}
+
+header nav{
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: solid 15px #141414;
+	border-left: solid 12px #141414;
+	border-bottom: solid 3px #141414;
+}
+
+header nav ul{
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li{
+	margin: 80px;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color:#27C220;
+	font-family: 'Abril Fatface', cursive;
+	transition: 0.3s;
+}
+
+header nav ul li a:hover{
+	color: #14AB9E;
+	border-bottom: solid 3px darkred;
+	padding: 0 10px 7px 10px;
+	font-size: 25px;
+}
+
+
+/* KEVIN MITNICK CUERPO */
+
+.kevin{
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	padding: 0 7%;
+	position: relative;
+}
+
+.kevin .cuerpo{
+	width: 600px;
+	height: 500px;
+}
+
+.kevin .cuerpo h1{
+	color: white;
+	font-family: 'Arvo', serif;
+	font-size: 45px;
+	padding: 5% 0 2%;
+	position: relative;
+}
+
+.kevin .cuerpo h3{
+	position: relative;
+	color: aqua;
+	font-size: 30px;
+    padding: 0 0 2% ;
+}
+
+.kevin .cuerpo p{
+    color: #FE6000;
+    font-size: 18px;
+    position: relative;
+}
+
+
+/* KEVIN MITNICK BOTON */
+
+.kevin .boton{
+	position: relative;
+    width: 360px;
+    height: 100px;
+    margin: 7% 0 0 10%;
+    display: grid;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.kevin .boton button{
+    padding: 17px 40px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color:#090e34;
+    border: solid 1px violet;
+    color: white;
+}
+
+.kevin .boton button:hover{
+	color: #980000;
+	border: none;
+	background-color: #606514;
+}
+
+.kevin .boton button span{
+	position: absolute;
+	background-color: aqua;
+	transition: 0.5s;
+}
+
+.uno{
+	width: 100%;
+	height: 3px;
+	top: 0;
+	left: -100%;
+}
+
+.dos{
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	right: -100%;
+}
+
+.tres{
+	width: 3px;
+	height: 100%;
+	bottom: -100%;
+	left: 0;
+}
+
+.cuatro{
+	width: 3px;
+	height: 100%;
+	top: -100%;
+	right: 0;
+}
+
+.kevin .boton button:hover span:nth-child(1){
+    left: 0;
+}
+
+.kevin .boton button:hover span:nth-child(2){
+	right: 0;
+}
+
+.kevin .boton button:hover span:nth-child(3){
+	bottom: 0;
+}
+
+.kevin .boton button:hover span:nth-child(4){
+	top: 0;
+}
+
+/* KEVIN MITNICK IMAGEN */
+
+.kevin .movediso{
+	width: 500px;
+	height: 500px;
+	margin: -5% 0 0 20%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+
+.kevin .movediso::before{
+	content: "";
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	background: conic-gradient(red 20deg, transparent 120deg);
+    animation: traslacion 2s infinite linear;
+}
+
+.kevin .movediso::after{
+	content: "";
+	position: absolute;
+	width: 470px;
+	height: 485px;
+    background-image: url(imagenes/kevin.jpg);
+    background-size: cover;
+    background-position: 20% 50%;
+    border-radius: 20px;
+}
+
+.movediso:hover{
+       transform: scale(0.9);
+}
+
+@keyframes traslacion{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
+
+
+/* ADRIAN LAMON CUERPO */
+
+
+.adrian{
+	height: 90vh;
+    display: flex;
+	align-items: center;
+	padding: 0 7%;
+	color: white;
+}
+
+
+.adrian .cuerpo{
+	width: 600px;
+	height: 500px;
+	margin: 0 0 0 20%;
+}
+
+.adrian .cuerpo h1{
+	color: white;
+	font-family: 'Arvo', serif;
+	font-size: 45px;
+	padding: 5% 0 2%;
+	position: relative;
+}
+
+.adrian .cuerpo h3{
+	color: aqua;
+	font-size: 30px;
+    padding: 0 0 2%;
+    position: relative;
+}
+
+.adrian .cuerpo p{
+    color: #FE6000;
+    font-size: 18px;
+    position: relative;
+}
+
+/* ADRIAN LAMO BOTON */
+
+.adrian .boton{
+    width: 360px;
+    height: 100px;
+    margin: 7% 0 0 10%;
+    display: grid;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.adrian .boton button{
+    padding: 17px 40px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color:#090e34;
+    border: solid 1px violet;
+    color: white;
+    position: relative;
+}
+
+.adrian .boton button:hover{
+	color: #980000;
+	border: none;
+	background-color: #606514;
+}
+
+.adrian .boton button span{
+	position: absolute;
+	background-color: aqua;
+	transition: 0.5s;
+}
+
+.uno{
+	width: 100%;
+	height: 3px;
+	top: 0;
+	left: -100%;
+}
+
+.dos{
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	right: -100%;
+}
+
+.tres{
+	width: 3px;
+	height: 100%;
+	bottom: -100%;
+	left: 0;
+}
+
+.cuatro{
+	width: 3px;
+	height: 100%;
+	top: -100%;
+	right: 0;
+}
+
+.adrian .boton button:hover span:nth-child(1){
+    left: 0;
+}
+
+.adrian .boton button:hover span:nth-child(2){
+	right: 0;
+}
+
+.adrian .boton button:hover span:nth-child(3){
+	bottom: 0;
+}
+
+.adrian .boton button:hover span:nth-child(4){
+	top: 0;
+}
+
+/* ADRIAN LAMO IMAGEN */
+
+.adrian .movediso{
+	width: 500px;
+	height: 500px;
+}
+
+.adrian .movediso{
+	width: 500px;
+	height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.adrian .movediso::before{
+	content: "";
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	background: conic-gradient(blue 20deg, transparent 120deg);
+    animation: traslacion 2s infinite linear;
+}
+
+.adrian .movediso::after{
+	content: "";
+	position: absolute;
+	width: 470px;
+	height: 485px;
+    background-image: url(imagenes/adrian.jpg);
+    background-size: cover;
+    background-position: 20% 50%;
+    border-radius: 20px;
+}
+
+/* ALBERT GONZÁLES CUERPO*/
+
+.albert{
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	padding: 0 7%;
+}
+
+.albert .cuerpo{
+	width: 700px;
+	height: 500px;	  
+}
+
+.albert .cuerpo h1{
+	color: white;
+	font-family: 'Arvo', serif;
+	font-size: 45px;
+	padding: 5% 0 2%;
+
+}
+
+.albert .cuerpo h3{
+	color: aqua;
+	font-size: 30px;
+    padding: 0 0 2% ;
+}
+
+.albert .cuerpo p{
+    color: #FE6000;
+    font-size: 18px;
+}
+
+
+/* ALBERT GONZÁLES BOTON */
+
+.albert .boton{
+    width: 360px;
+    height: 100px;
+    margin: 7% 0 0 10%;
+    display: grid;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.albert .boton button{
+    padding: 17px 40px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color:#090e34;
+    border: solid 1px violet;
+    color: white;
+}
+
+.albert .boton button:hover{
+	color: #980000;
+	border: none;
+	background-color: #606514;
+}
+
+.albert .boton button span{
+	position: absolute;
+	background-color: aqua;
+	transition: 0.5s;
+}
+
+.uno{
+	width: 100%;
+	height: 3px;
+	top: 0;
+	left: -100%;
+}
+
+.dos{
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	right: -100%;
+}
+
+.tres{
+	width: 3px;
+	height: 100%;
+	bottom: -100%;
+	left: 0;
+}
+
+.cuatro{
+	width: 3px;
+	height: 100%;
+	top: -100%;
+	right: 0;
+}
+
+.albert .boton button:hover span:nth-child(1){
+    left: 0;
+}
+
+.albert .boton button:hover span:nth-child(2){
+	right: 0;
+}
+
+.albert .boton button:hover span:nth-child(3){
+	bottom: 0;
+}
+
+.albert .boton button:hover span:nth-child(4){
+	top: 0;
+}
+
+
+/* ALBERT GONZÁLES IMAGEN */
+
+.albert .movediso{
+	width: 545px;
+	height: 500px;
+	margin: -5% 0 0 20%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.albert .movediso::before{
+	content: "";
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	background: conic-gradient(#d510a5 20deg, transparent 120deg);
+    animation: traslacion 2s infinite linear;
+}
+
+.albert .movediso::after{
+	content: "";
+	position: absolute;
+	width: 450px;
+	height: 485px;
+    background-image: url(imagenes/albert.jpg);
+    background-size: cover;
+    background-position: 20% 50%;
+    border-radius: 20px;
+}
+
+section{
+	border-right: solid 15px #141414;
+	border-left: solid 12px #141414;
+	border-bottom: solid 10px #141414;
+	border-top: solid 8px #141414;
+}
+
+
+.kevin .cuerpo h1::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.kevin .cuerpo h3::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.kevin .cuerpo p::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.kevin .boton button::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+/*ADRIAN LAMO*/
+
+
+.adrian .cuerpo h1::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.adrian .cuerpo h3::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.adrian .cuerpo p::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.adrian .boton button::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	animation: deslizante 1s ease forwards;
+	animation-delay: 1s;
+}
+
+
+@keyframes deslizante{
+	100%{
+		width: 0;
+	}
+}
+
+
+footer{
+	width: 100%;
+	height: 50vh;
+	background-color: #141414;
+	display: flex;
+	justify-content: center;
+	gap: 14%;
+	padding-top: 1%;
+}
+
+footer .gps{
+	width: 300px;
+	height: 300px;
+	background-image: url(imagenes/gps.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+footer .max{
+	width: 800px;
+	height: 380px;
+    text-align: center;
+
+}
+
+footer .max h2{
+	font-size: 40px;
+	background-image: linear-gradient(#ffa130, #09ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+footer .max p{
+	color: aqua;
+	font-size: 18px;
+}
+
+footer .max .redessociales{
+	width: 400px;
+	height: 90px;
+	margin: 30px 200px;
+}
+
+footer .max .redessociales a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: solid 2px red;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #7a7abe;
+	text-decoration: none;
+	margin: 30px 15px 30px 0;
+}
+
+footer .max .redessociales a:hover{
+	background-color: #0ef;
+	color: black;
+	box-shadow: 0  0 20px red;
+}
